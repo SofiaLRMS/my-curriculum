@@ -1,74 +1,63 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
 
-  <meta charset="utf-8">
-  <title> Curriculum Vitae </title>
+    <meta charset="UTF-8">
+    <title> Formulário </title>
 
 </head>
 
+
 <body>
 
-  <h1> Sofia Laura Ramos Malaquias </h1>  
 
-  <hr>
-  
-  <p> Contatos: </p>
+    <h1> Travel reservation form </h1>
+    <h3> * denotes mandotory </h3>
 
-  <ol>
+    <form method="get">
 
-    <li> <strong> E-mail: </strong> slrm1@aluno.ifal.edu.br </li>
-    <li> <strong> Nome Skype: </strong> live:.cid.42611a3894cc5eb0 </li><br>
 
-  </ol>
+    Full name*: <input type="text" placeholder="FirstName LastName" required/><br>
 
-  <img src="photo.jpg" width="75" height="75" alt="Foto da candidata"> 
+    Email address*: <input type="email" placeholder="EMAIL_ADDRESS" required/><br>
 
-  <p> Uma das minhas diversas habilidades é a <strong>audição aguçada</strong>, não no sentido denotativo da palavra, mas por saber escutar e aprender com isso. Acredito que isto me diferencie de outrem, pois é algo fundamental para o desenvolvimento de um trabalho em equipe. </p>
+    Select Tour Package*: <select name="tourpackage">
 
-  <hr>
+    <option value="goa"> Goa </option>
+    <option value="andhrapradesh"> Andhra Pradesh </option>
+    <option value="haryana"> Haryana </option>
+    <option value="assam"> Assam </option>
 
-  <h2> Endereço </h2>
+    </select><br>
+    
+    Arrival date*: <input type="date" placeholder="EMAIL_ADDRESS" required/>
+    <br>
 
-  <hr>
+    Number of persons*: <input type="number" placeholder="UNKNOWN_TYPE" min="1" max="9" required/>
+    <br>
 
-  <p> <strong> Cidade: </strong> Marechal Deodoro </p>
-  <p> <strong> Bairro: </strong> Povoado Pedras </p>
-  <p> <strong> CEP: </strong> 57160-000 </p><br>
+    What would you want to avail?*<br>
+    Boarding <input type="checkbox" name="avail"/><br>
+    Fooding <input type="checkbox" name="avail"/><br>
+    Sight seeing<input type="checkbox" name="avail"/><br>
 
-  <hr>
+    Discount Coupon Code: <input type="text" placeholder="UNKNOWN_TYPE" pattern="{6}"/> 
+    <br>
 
-  <h2> Formação acadêmica </h2>
+    I agree<input type="radio" name="term" value="agree" required/>
+    I disagree<input type="radio" name="term" value="disagree" required/>
+    <br>
 
-  <hr><br>
+    <input type="submit" value="Complete reservation"/>
+    <br>
 
-  <a href = "https://www2.ifal.edu.br/"> Instituto Federal de Educação, Ciência e Tecnologia de Alagoas </a>
 
-  <p> Técnico em Desenvolvimento de Sistemas <br> 2022 - Atual </p>
-  
-  <br>
+    </form>
 
-  <hr>
-  <h2> Competências </h2>
-  <hr>
-
-  <p> Linguagem de programação: JavaScript </p>
-  <p> CSS </p>
-  <p> HTML </p>
-
-  <hr>
-  <h2> Cursos complementares </h2>
-  <hr>
-
-  <ul> 
-
-    <li>  <strong> BOOTCAMP Cisco Next Level </strong> <br> Com carga horária de 10 horas. </li>  <br>
-    <li>  <strong> Cisco 360 - Do zero à prática </strong> <br> Com carga horária de 10 horas. </li> 
-
-  </ul>
-  
-  
+    
 </body>
+
 
 </html>
